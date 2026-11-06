@@ -74,6 +74,43 @@
                 Para fazer uma encomenda, entre em contato
                 e consulte os produtos disponíveis.
             </p>
+            
+<form action="#" method="get">
+    <fieldset>
+        <legend>Dados para encomenda</legend>
+
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"
+                   pattern="[0-9]{10,11}"
+                   title="Digite o DDD e o número, somente com números">
+        </p>
+
+        <p>
+            <label for="produto">Produto desejado:</label>
+            <select id="produto" name="produto" required>
+                <option value="">Selecione um produto</option>
+                <option value="bolo">Bolo decorado</option>
+                <option value="brigadeiro">Brigadeiro gourmet</option>
+                <option value="brownie">Brownie</option>
+                <option value="sobremesa">Sobremesa no pote</option>
+            </select>
+        </p>
+
+        <button type="submit">Enviar encomenda</button>
+    </fieldset>
+</form>
+
 
             <p>
                 Para conhecer mais sobre receitas de doces,
