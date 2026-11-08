@@ -163,3 +163,18 @@ footer {
 .produto h3 {
     margin-top: 0;
 }
+/* Classificações dos produtos */
+.economico {
+    color: #287a45;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #a36312;
+    font-weight: bold;
+}
+
+.premium {
+    color: #8b3f78;
+    font-weight: bold;
+}
