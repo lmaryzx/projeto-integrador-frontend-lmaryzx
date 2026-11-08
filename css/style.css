@@ -109,3 +109,57 @@ footer {
     padding: 1.5rem;
     background-color: var(--rosa);
 }
+/* Menu principal organizado com Flexbox */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+/* Estilo dos links do menu */
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--borda);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse ou navegar pelo teclado */
+.menu a:hover,
+.menu a:focus-visible {
+    background-color: var(--dourado);
+    color: white;
+    transform: translateY(-0.2rem);
+}
+/* Catálogo de produtos organizado com CSS Grid */
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Estilização dos cartões individuais */
+.produto {
+    background-color: var(--creme);
+    border: 0.1rem solid var(--dourado);
+    border-radius: var(--borda);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Pseudoclasse estrutural: destaca o primeiro produto */
+.produto:first-child {
+    background-color: var(--rosa);
+}
+
+/* Espaçamento dos títulos dos produtos */
+.produto h3 {
+    margin-top: 0;
+}
