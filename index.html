@@ -12,10 +12,19 @@
 </head>
 <body>
 
-    <header id="cabecalho-principal">
-        <h1 class="destaque">Confeitaria Doce Encanto</h1>
-        <p>Doces feitos para momentos especiais.</p>
-    </header>
+ <header id="cabecalho-principal">
+    <h1 class="destaque">Confeitaria Doce Encanto</h1>
+    <p>Doces feitos para momentos especiais.</p>
+
+    <nav aria-label="Navegação principal">
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#encomendas">Encomendas</a></li>
+        </ul>
+    </nav>
+</header>
 
 <section class="card">
     <h2>Conheça nossa confeitaria</h2>
@@ -50,42 +59,65 @@
             </p>
         </section>
 
-      <section class="card">
-            <h2>Nossos produtos</h2>
-            <p>Conheça algumas opções da nossa confeitaria:</p>
+      <section class="card" id="produtos">
+    <h2>Nossos produtos</h2>
+    <p>Conheça algumas opções da nossa confeitaria:</p>
 
-            <ul>
-                <li>Bolos decorados</li>
-                <li>Brigadeiros gourmet</li>
-                <li>Brownies</li>
-                <li>Sobremesas no pote</li>
-            </ul>
+    <ul>
+        <li>Bolos decorados</li>
+        <li>Brigadeiros gourmet</li>
+        <li>Brownies</li>
+        <li>Sobremesas no pote</li>
+    </ul>
 
-            <h3>Cardápio</h3>
+    <!-- Catálogo de produtos organizado com CSS Grid -->
+    <div class="grade-produtos">
+        <article class="produto">
+            <h3>Bolos decorados</h3>
+            <p>Bolos personalizados para momentos especiais.</p>
+        </article>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Brigadeiro gourmet</td>
-                        <td>R$ 4,00</td>
-                    </tr>
-                    <tr>
-                        <td>Brownie</td>
-                        <td>R$ 8,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bolo decorado</td>
-                        <td>Sob consulta</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <article class="produto">
+            <h3>Brigadeiros gourmet</h3>
+            <p>Brigadeiros preparados com ingredientes selecionados.</p>
+        </article>
+
+        <article class="produto">
+            <h3>Brownies</h3>
+            <p>Brownies de chocolate com sabor irresistível.</p>
+        </article>
+
+        <article class="produto">
+            <h3>Sobremesas no pote</h3>
+            <p>Sobremesas cremosas em diferentes sabores.</p>
+        </article>
+    </div>
+
+    <h3>Cardápio</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brigadeiro gourmet</td>
+                <td>R$ 4,00</td>
+            </tr>
+            <tr>
+                <td>Brownie</td>
+                <td>R$ 8,00</td>
+            </tr>
+            <tr>
+                <td>Bolo decorado</td>
+                <td>Sob consulta</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
         <section class="card">
             <h2>Galeria de doces</h2>
