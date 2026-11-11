@@ -1,26 +1,132 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria Doce Encanto</title>
 </head>
 <body>
-    <h1>Confeitaria Doce Encanto</h1>
 
-    <p>Bem-vindo ao nosso catálogo Digital!</p>
+    <header>
+        <h1>Confeitaria Doce Encanto</h1>
+        <p>Doces feitos com carinho para momentos especiais.</p>
+    </header>
 
-    <h2>Nossos produtos</h2>
-    <ul>
-        <li>Bolos</li>
-        <li>Brigadeiros</li>
-        <li>Sobremesas</li>
-    </ul>
+    <main>
+        <section>
+            <h2>Sobre a confeitaria</h2>
+            <p>
+                A Doce Encanto é uma confeitaria fictícia que
+                trabalha com bolos, brigadeiros e sobremesas.
+                Nosso objetivo é oferecer doces para festas,
+                comemorações e outros momentos especiais.
+            </p>
+        </section>
 
-    <h2>Encomendas</h2>
-    <p>Trabalhamos com doces feitos sob encomenda para diversas ocasiões.</p>
+        <section>
+            <h2>Nossos produtos</h2>
+            <p>Conheça algumas opções da nossa confeitaria:</p>
 
-    <h2>Contato</h2>
-    <p>Entre em contato para saber mais sobre nossos produtos.</p>
+            <ul>
+                <li>Bolos decorados</li>
+                <li>Brigadeiros gourmet</li>
+                <li>Brownies</li>
+                <li>Sobremesas no pote</li>
+            </ul>
+
+            <h3>Cardápio</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brigadeiro gourmet</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+                    <tr>
+                        <td>Brownie</td>
+                        <td>R$ 8,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bolo decorado</td>
+                        <td>Sob consulta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Galeria de doces</h2>
+            <img src="assets/images/catalogodoces.jpg"
+                 alt="Doces variados de uma confeitaria"
+                 width="350">
+        </section>
+
+        <section>
+            <h2>Encomendas e contato</h2>
+            <p>
+                Para fazer uma encomenda, entre em contato
+                e consulte os produtos disponíveis.
+            </p>
+            
+<form action="#" method="get">
+    <fieldset>
+        <legend>Dados para encomenda</legend>
+
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"
+                   pattern="[0-9]{10,11}"
+                   title="Digite o DDD e o número, somente com números">
+        </p>
+
+        <p>
+            <label for="produto">Produto desejado:</label>
+            <select id="produto" name="produto" required>
+                <option value="">Selecione um produto</option>
+                <option value="bolo">Bolo decorado</option>
+                <option value="brigadeiro">Brigadeiro gourmet</option>
+                <option value="brownie">Brownie</option>
+                <option value="sobremesa">Sobremesa no pote</option>
+            </select>
+        </p>
+
+        <button type="submit">Enviar encomenda</button>
+    </fieldset>
+</form>
+
+
+            <p>
+                Para conhecer mais sobre receitas de doces,
+                visite 
+                <a href="https://www.tudogostoso.com.br/categorias/1037-doces-e-sobremesas"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Tudo gostoso - Doces
+                </a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Confeitaria Doce Encanto - Projeto acadêmico</p>
+    </footer>
+
 </body>
 </html>
