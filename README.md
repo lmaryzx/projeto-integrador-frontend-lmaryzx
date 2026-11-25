@@ -1,4 +1,4 @@
-# projeto-integrador-frontend-lmaryzx
+# projeto-integrador-frontend-Maria-eduarda
 # Confeitaria Doce Encanto
 
 Este projeto tem como objetivo criar um catálogo digital para uma confeitaria fictícia.
